@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f1f5f8;
+    line-height: 2.2;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #fff;
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--second-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+:root{
+    --main-color: #ff7b00ea;
+    --second-color: #ffe0c3ea;
+    --title-color: #222;
+    --subtitle-color: #8d8d8d;
+}
+
+nav{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    .navHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+        }
+    }
+    .fa-bars{
+        font-size: 1.5rem;
+        color: #6e7880;
+        cursor: pointer;
+    }
+    .fa-bars:hover{
+        color: #31363a;
+    }
+    .menu{
+        //將要隱藏的部分透過高度為0隱藏，並且將溢出的背景顏色隱藏
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        a{
+            color:#6e7880;
+            letter-spacing: 0.1rem;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all .3s linear;
+        }
+        a:hover{
+            background: #f1f5f8;
+            color: #31363a;
+            padding-left: 1.5rem;
+        }
+    }
+    //建立一個class顯示隱藏的部分，再透過js增加
+    .showMenu{
+        height: 13rem;
+    }
+    
+}
+//寬度大於800時呈現的樣子
+@media (min-width: 800px){
+    .main{
+        // max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        .navHeader{
+            padding: 0;
+            .fa-bars{
+                display: none;
+            }
+        }
+        .menu{
+            height: auto;
+            display: flex;
+            a{
+                padding: 0;
+                margin: 0 0.5rem;
+            }
+            a:hover{
+                padding: 0;
+                background: transparent;
+            }
+        }
+
+    }
+    
+}
+section{
+    height: 100vh;
+}
+.first{
+    position: relative;
+    p{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        background-color: chocolate;
+        margin: 10px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        h3{
+            margin: 0 28px;
+        }
+        h1{
+            margin: 0;
+        }
+        
+        
+        
+    }
+    
+}

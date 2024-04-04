@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ============ header  ============-->
+    <nav>
+        <div class="main">
+            <div class="navHeader">
+                <img src="./img/logo.svg" alt="logo">
+                <i class="toggleBars" aria-hidden="true"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./img/my.png" alt="">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">JingWen Huang</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./img/jingwen_resume.pdf')">My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <i class="fa-brands fa-github icon" onclick="location.href='https://github.com/'"></i>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">GET TO KNOW MORE</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section_text_container">
+                <p>擁有商管專業背景，目前正積極專職成一名前端工程師。透過自學及養成班的訓練已熟悉前端必備技術-HTML、CSS、JavaScript，
+                    並且了解前端框架React.js及與使用後端node.js串接API。我喜歡挑戰新事物，積極進取，對於前端開發充滿熱情，擁有獨立開發及團隊合作的能力。
+                </p>
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fa-solid fa-business-time icon"></i>
+                        <h3>Experience</h3>
+                        <li>芳達開發有限公司 - 銷售業務</li>
+                        <li>永旭保險經紀人股份有限公司 - 人身保險業務員</li>
+                    </div>
+                    <div class="details-container">
+                        <i class="fa-solid fa-graduation-cap icon"></i>
+                        <h3>Education</h3>
+                        <li>資展國際-台中 | 前端工程師就業養成班</li>
+                        <li>國立中興大學 | 創新產業經營學士學位學程</li>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>擁有商管專業背景，目前正積極專職成一名前端工程師。透過自學及養成班的訓練已熟悉前端必備技術-HTML、CSS、JavaScript，
+                        並且了解前端框架React.js及與使用後端node.js串接API。我喜歡挑戰新事物，積極進取，對於前端開發充滿熱情，擁有獨立開發及團隊合作的能力。
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <i class="fa-solid fa-angles-down icon-arrow" onclick="location.href='./#experience'"></i>
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container-ex">
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>熟悉 網頁版面切版及UI設計</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>熟悉 HTML5、CSS3</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>使用 RWD響應式網頁設計</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>熟悉 JavaScript ES5, ES6+</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>使用 jQuery / Bootstrap函式庫</h3>
+                            
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>了解 React框架</h3>
+                            
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container-ex">
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>使用Node.js建立Web API</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>理解PHP基礎知識</h3>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-check icon"></i>
+                            <h3>了解MySQL指令</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-down icon-arrow" onclick="location.href='./#portfolio'"></i>
+    </section>
+
+    <section id="portfolio">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Portfolio</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/bmi.png" alt="bmi-project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">BMI Compute</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/lenahua/bmi'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/counter.png" alt="counter-project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Time Counter</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/lenahua/timecountdown'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/weather.png" alt="weather-project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Weather App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/lenahua/get-weather-en'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-down icon-arrow" onclick="location.href='./#contact'"></i>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="fa-solid fa-envelope icon contact-icon"></i>
+                <p><a href="mailto:jwenn0807@gmail.com">jwenn0807@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="fa-brands fa-github icon contact-icon"></i>
+                <p><a href="https://github.com/lenahua">Github</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+            <div class="nav-links-container">
+                <ul class="footer-menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        
+            <p>Copyright &#169; 2024 JingWen Huang</p>
+    </footer>
+
+    <!-- <section class="first">
+        <img src="" alt="">
+        <p>Hello</p>
+        <div class="text">
+            <h3>My name is Jing-Wen, Huang</h3>
+            <h1>I'm a Front-End Engineer</h1>
+        </div>
+        
+        <img src="" alt="">
+    </section>
+    <section class="profile">
+        <h3>Profile</h3>
+        <p></p>
+        <img src="" alt="">
+        <div class="scrollSection">
+            <h4>Education</h4>
+
+        </div>
+    </section>
+    <section class="skill">
+        <h3>Skills</h3><span><h1>.</h1></span>
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="db"></div>
+    </section>
+    <section class="portfolio">
+        <h3>Portfolio</h3>
+
+    </section>
+    <section class="contact">
+        <h3>Contact</h3>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section> -->
+</body>
+<script src="./js/index.js"></script>
+</html>
