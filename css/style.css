@@ -224,8 +224,25 @@ section{
 #about{
   position: relative;
 }
+.text-container::before{
+  content: '"';
+  font-size: 4em;
+  position: absolute;
+  top: 230px;
+  left: -10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-ser;
+}
+.text-container::after{
+  content: '"';
+  font-size: 4em;
+  position: absolute;
+  top: 360px;
+  right: -10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .about-containers{
   gap: 2rem;
+  margin-top: 30px;
 }
 .about-details-container{
   justify-content: center;
@@ -452,6 +469,13 @@ footer p{
   }
   #about{
     margin-top: 15rem;
+  }
+  .text-container::before{
+    content: '"';
+    font-size: 4em;
+    position: absolute;
+    top: 140px;
+    left: -10px;
   }
 }
 
