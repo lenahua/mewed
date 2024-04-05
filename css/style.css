@@ -477,6 +477,14 @@ footer p{
     top: 140px;
     left: -10px;
   }
+  .text-container::after{
+    content: '"';
+    font-size: 4em;
+    position: absolute;
+    top: 420px;
+    right: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 }
 
 @media screen and (max-width: 600px){
